@@ -36,6 +36,7 @@ sorting of directed graphs, and study their performance.
 Please download the skeleton code from the LMS. <span>**Do not alter
 filenames or structure**</span>. The files are as follows.
 
+ | File               | Instructions                                           |
  | ------------------ | ------------------------------------------------------ |
  | `Makefile`         | Download from LMS and edit to include your student id. |
  | `main.c`           | Download from LMS and do not change.                   |
