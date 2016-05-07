@@ -36,17 +36,17 @@ sorting of directed graphs, and study their performance.
 Please download the skeleton code from the LMS. <span>**Do not alter
 filenames or structure**</span>. The files are as follows.
 
- | File               | Instructions
- | ------------------ | ------------------------------------------------------
- | `Makefile`         | Download from LMS and edit to include your student id.
- | `main.c`           | Download from LMS and do not change.
- | `graph.h`          | Download from LMS and do not change.
- | `list.h, list.c`   | Download from LMS and do not change.
- | `graphio.h`        | Download from LMS and do not change.
- | `toposort.h`       | Download from LMS and do not change.
- | `graphio.c`        | Replace with your own implementation.
- | `graph.c`          | Replace with your own implementation.
- | `toposort.c`       | Replace with your own implementation.
+File               | Instructions
+------------------ | ------------------------------------------------------
+`Makefile`         | Download from LMS and edit to include your student id.
+`main.c`           | Download from LMS and do not change.
+`graph.h`          | Download from LMS and do not change.
+`list.h, list.c`   | Download from LMS and do not change.
+`graphio.h`        | Download from LMS and do not change.
+`toposort.h`       | Download from LMS and do not change.
+`graphio.c`        | Replace with your own implementation.
+`graph.c`          | Replace with your own implementation.
+`toposort.c`       | Replace with your own implementation.
 
 Note that you should be able to compile the supplied code, although you
 will see warnings about unused parameters.
