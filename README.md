@@ -1,13 +1,14 @@
 DEPARTMENT OF COMPUTING AND INFORMATION SYSTEMS
+-----------------------------------------------
 
-**COMP20007 Design of Algorithms, Semester 1, 2016**
+### COMP20007 Design of Algorithms, Semester 1, 2016
 
-Assignment 1: Topological Sort
+*Assignment 1: Topological Sort*
 
-Due: 5pm Friday 8 April
+*Due: 5pm Friday 8 April*
 
-Objective {#objective .unnumbered}
-=========
+Objective
+---------
 
 Suppose that you are undertaking a complex task that is made up of many
 sub-tasks, each with dependencies. Examples of this can easily be found,
@@ -20,7 +21,7 @@ the situation that task $t_i$ must be completed before task $t_j$ can
 begin.
 
 The topological sort, or *toposort*, of a connected directed acyclic
-graph is a list of the $n$ nodes of the graph $t_0, t_1,\ldots,t_{n-1}$
+graph is a list of the $n$ nodes of the graph $t_0, t_1,...,t_{n-1}$
 such that for every directed edge $(t_i, t_j)$ in the graph, $t_i$
 precedes $t_j$ in the list.
 
@@ -35,17 +36,16 @@ sorting of directed graphs, and study their performance.
 Please download the skeleton code from the LMS. <span>**Do not alter
 filenames or structure**</span>. The files are as follows.
 
-  ------------------ --------------------------------------------------------
-  `Makefile`         Download from LMS and edit to include your student id.
-  `main.c`           Download from LMS and do not change.
-  `graph.h`          ”
-  `list.h, list.c`   ”
-  `graphio.h`        ”
-  `toposort.h`       ”
-  `graphio.c`        Replace with your own implementation.
-  `graph.c`          ”
-  `toposort.c`       ”
-  ------------------ --------------------------------------------------------
+ | ------------------ | ------------------------------------------------------ |
+ | `Makefile`         | Download from LMS and edit to include your student id. |
+ | `main.c`           | Download from LMS and do not change.                   |
+ | `graph.h`          | ”                                                      |
+ | `list.h, list.c`   | ”                                                      |
+ | `graphio.h`        | ”                                                      |
+ | `toposort.h`       | ”                                                      |
+ | `graphio.c`        | Replace with your own implementation.                  |
+ | `graph.c`          | ”                                                      |
+ | `toposort.c`       | ”                                                      |
 
 Note that you should be able to compile the supplied code, although you
 will see warnings about unused parameters.
@@ -58,15 +58,15 @@ follows:
     ass1 -m 2 mygraph.txt > mygraph_toposort2.txt   # performs toposort (method 2)
     ass1 -v mygraph.txt < mygraph_toposort2.txt     # verifies a toposort
 
-Project {#project .unnumbered}
-=======
+Project
+-------
 
 The project consists of five parts, one for graph input, three for
 algorithms, and one for your report. Each part is worth 2 marks, for a
 total of 10 marks.
 
-Part 1: Graph Input and Output {#part-1-graph-input-and-output .unnumbered}
-==============================
+Part 1: Graph Input and Output
+------------------------------
 
 Implement function `load_graph()` in `graphio.c` to load a graph from a
 plain text file. The file consists of a line specifying the number $n$
@@ -76,7 +76,7 @@ followed by a sequence of ordered pairs to indicate directed edges
 between the vertices. Vertex labels may include punctuation and spaces.
 You may wish to use the function `fgets()` in the standard C library for
 reading vertex labels. Vertices are to be identified using the integers
-$0 \ldots n - 1$. Here is an example of the file format:
+$0 ... n - 1$. Here is an example of the file format:
 
     3
     COMP10001
@@ -105,8 +105,8 @@ The program graphviz can be used to open files in the DOT format to
 visualise them. If graphviz is installed and available in the `PATH`
 there is a target in the `Makefile` that converts a dot file to a PNG.
 
-Part 2: DFS Algorithm for Toposort {#part-2-dfs-algorithm-for-toposort .unnumbered}
-==================================
+Part 2: DFS Algorithm for Toposort
+----------------------------------
 
 Implement the DFS algorithm for toposort from Wikipedia.[^1] (Use
 auxiliary arrays of Boolean values to mark temporarily and permanently
@@ -121,8 +121,8 @@ any reason, you should report the error to the `stderr` stream and your
 program should terminate execution and return `EXIT_FAILURE` to indicate
 failure.
 
-Part 3: Kahn’s Algorithm for Toposort {#part-3-kahns-algorithm-for-toposort .unnumbered}
-=====================================
+Part 3: Kahn’s Algorithm for Toposort
+-------------------------------------
 
 Implement Kahn’s Algorithm for toposort, also from Wikipedia. As before,
 do your work in `toposort.c` in a function `kahn_sort()`. `kahn_sort()`
@@ -134,8 +134,8 @@ graph, for any reason, you should report the error to the `stderr`
 stream and your program should terminate execution and return
 `EXIT_FAILURE` to indicate failure.
 
-Part 4: Verification {#part-4-verification .unnumbered}
-====================
+Part 4: Verification
+--------------------
 
 Design and implement an algorithm to verify that a given sequence of
 vertices is a correct topological sort of a graph. Extend `toposort.c`
@@ -143,8 +143,8 @@ using a function named `verify()`, which takes a list of vertices as
 input and returns a Boolean value. You will be able to run this
 verification function using the `-v` command line option.
 
-Part 5: Analysis {#part-5-analysis .unnumbered}
-================
+Part 5: Analysis
+----------------
 
 Write a two-page report (11 point font) on the efficiency of both
 algorithms. A good report should include: a graph of running times on
@@ -154,8 +154,8 @@ times (perhaps in a table, perhaps a graph) of the two programs on
 pathological inputs, again with a discussion relating them to the big-O
 bounds. Submit your report in PDF format, as a file named `report.pdf`.
 
-Submission {#submission .unnumbered}
-==========
+Submission
+----------
 
 Submission is via LMS under COMP20007, “Assignment 1”. Submissions will
 close automatically at the deadline. NB. Machine and network
@@ -176,8 +176,8 @@ can type `make submission` to create the required archive file.
 *Submissions not adhering to these requirements will be subject to a 2
 point penalty.*
 
-Testing {#testing .unnumbered}
-=======
+Testing
+-------
 
 We provide some basic tools for you to test your implementation. Three
 small graphs, with their corresponding dot files, are provided with the
