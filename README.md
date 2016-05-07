@@ -97,7 +97,7 @@ DOT file specified in the `-p` command line argument. The DOT file
 corresponding to the above input is shown below:
 
     digraph {
-        COMP10001 -> { COMP20007 COMP10001 }
+        COMP10001 -> { COMP20007 COMP10002 }
         COMP10002 -> { COMP20007 }
         COMP20007
     }
