@@ -5,17 +5,7 @@ The `summary.txt` that resides in each student folder was originally intended
 to be something that could be shown to students, so it displays rough
 information on how the submission went on the test case.
 
-The log files on the top level give more detailed information, intended to be
-the command used to verify a test case, or the command the submission failed.
-
-This is important in graph input and output, because the python script was too
-slow to verify large graphs.
-
 So in the `subs/.../summary.txt` it would say:
-
-    PASS ./test/dag.0010-045.in isomorphic to expected output
-
-However in `print.log` it would say:
 
     PASS: scripts/isomorphic.py subs/.../out/dag.0010-045.dot ./test/dag.0010-045.dot
 
@@ -173,4 +163,3 @@ The four coding parts of the assignment will be marked as follows:
 
 +   Submissions not adhering to these requirements will be subject to a 2 point
     penalty.
-
