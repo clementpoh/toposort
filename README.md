@@ -181,14 +181,7 @@ The `summary.txt` that resides in each student folder was originally intended
 to be something that could be shown to students, so it displays rough
 information on how the submission went on the test case.
 
-The log files on the top level give more detailed information, intended to be
-the command used to verify a test case, or the command the submission failed.
-
-So in the `subs/.../summary.txt` it would say:
-
-    PASS ./test/dag.0010-045.in isomorphic to expected output
-
-However in `print.log` it details the command used to get that result:
+So in the `subs/.../summary.txt` it presents the command used to get the result:
 
     PASS: scripts/isomorphic.py subs/.../out/dag.0010-045.dot ./test/dag.0010-045.dot
 
@@ -374,9 +367,7 @@ notable files.
     │   ├── main.c          # Copied to submission
     │   ├── Makefile
     │   ├── soln            # Solution binary, renamed from ass1
-    │   ├── test
-    │   │   ├── graphgen.c  # Edited daggen.c to output graphs and DAGs
-    │   │   └── ...
+    │   ├── graphgen.c      # Edited daggen.c to output graphs and DAGs
     │   ├── toposort.c
     │   └── toposort.h
     ├── subs
@@ -391,3 +382,4 @@ notable files.
         └── null.in         #  0 vertices
 
     9 directories, 77 files
+
