@@ -1,0 +1,17 @@
+ass1
+daggen
+graphgen
+tags
+*.o
+*.swp
+tmp.*
+graph.*-*.in
+dag.*-*.in
+*.log
+soln/soln
+
+test/*.dot
+test/*.rev
+test/*.dfs
+test/*.kahn
+test/*.rand
