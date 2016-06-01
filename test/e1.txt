@@ -1,0 +1,21 @@
+11
+433-151 Introduction to Programming (Advanced)
+433-152 Algorithmic Problem Solving (Advanced)
+433-252 Software Engineering Principles & Tools
+433-253 Algorithms and Data Structures
+433-254 Software Design
+433-255 Logic and Computation
+433-332 Operating Systems
+433-340 Software Engineering Project
+433-341 Software Engineering Process & Practice
+433-342 Software Engineering Methods
+433-440 Advanced Software Engineering Project
+0 1
+1 2
+2 3
+1 4
+1 5
+3 6
+2 5
+1 4
+3 6

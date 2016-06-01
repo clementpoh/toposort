@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ass1
 daggen
 graphgen
@@ -15,3 +16,41 @@ test/*.rev
 test/*.dfs
 test/*.kahn
 test/*.rand
+=======
+# Project specific files
+ass1
+daggen
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+>>>>>>> d437c36a6b84b89a0d2342c2dd6a4b939969205d
