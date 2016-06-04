@@ -32,7 +32,7 @@ if [ -d "$1" ]; then
 
     printf "******************************************\n" > $LOGFILE
     printf "* Compiling solution:\n" >> $LOGFILE
-    printf "******************************************\n" > $LOGFILE
+    printf "******************************************\n" >> $LOGFILE
     # Compile the submission
     make -C "$1" "ass1" >> $LOGFILE 2>&1
 
